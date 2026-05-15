@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
 }
 
 header {
@@ -43,6 +45,7 @@ main {
 }
 
 .card {
+    background-color: white;
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 10px;
