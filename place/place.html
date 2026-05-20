@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A country page about Germany featuring Heidelberg, Köln, Dortmund, Mainz, Würzburg, and Mannheim.">
+  <meta name="author" content="Samantha Holbeny">
+  <title>Germany | Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Germany</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/germany-large.webp" media="(min-width: 768px)">
+        <img src="images/germany-small.webp" alt="Scenic view of Germany with historic buildings and landscape">
+      </picture>
+    </section>
+
+    <section class="card data">
+      <h2>Data</h2>
+      <p><strong>Country:</strong> Germany</p>
+      <p><strong>Capital:</strong> Berlin</p>
+      <p><strong>Language:</strong> German</p>
+      <p><strong>Currency:</strong> Euro</p>
+      <p><strong>Region:</strong> Central Europe</p>
+      <p><strong>Featured Cities:</strong> Heidelberg</p>
+    </section>
+
+    <section class="card weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather icon">
+      <p><strong>Temperature:</strong> <span id="temperature">6</span> °C</p>
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind-speed">12</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Samantha Holbeny | Germany</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
