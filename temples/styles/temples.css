@@ -49,10 +49,10 @@ header h1 {
 
 /* NAVIGATION */
 
-.navigation {
+nav.navigation {
     display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .navigation a {
