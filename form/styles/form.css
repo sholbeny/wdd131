@@ -1,0 +1,123 @@
+:root {
+    --red: #d62828;
+    --yellow: #fcbf49;
+    --blue: #003049;
+    --light: #f8f9fa;
+    --dark: #1d1d1d;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+header,
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 650px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+form {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-top: 8px solid var(--yellow);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+label,
+legend {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.35rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+fieldset {
+    margin-top: 1rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+fieldset input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    margin-top: 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--red);
+}
+
+.confirmation {
+    background-color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 8px solid var(--yellow);
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.confirmation a:hover {
+    background-color: var(--red);
+}
+
+@media screen and (min-width: 700px) {
+    form {
+        padding: 2rem;
+    }
+}

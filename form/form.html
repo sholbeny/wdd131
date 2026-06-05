@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LEGO product review form for W05 assignment">
+    <meta name="author" content="Samantha Holbeny">
+    <title>LEGO Set Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/products.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>LEGO Set Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">LEGO Set Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                <label><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                <label><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                <label><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="date">Date Built</label>
+            <input type="date" id="date" name="date" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+
+                <label><input type="checkbox" id="minifigures" name="features" value="Minifigures"> Minifigures</label>
+                <label><input type="checkbox" id="display" name="features" value="Display Value"> Display Value</label>
+                <label><input type="checkbox" id="building" name="features" value="Building Experience"> Building Experience</label>
+                <label><input type="checkbox" id="pieces" name="features" value="Piece Variety"> Piece Variety</label>
+                <label><input type="checkbox" id="play" name="features" value="Play Features"> Play Features</label>
+            </fieldset>
+
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5"></textarea>
+
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Submit LEGO Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Samantha Holbeny | Minnesota</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
