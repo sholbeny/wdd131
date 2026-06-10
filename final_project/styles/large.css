@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .navigation a {
+    padding: 0.8rem 1rem;
+  }
+
+  .home-hero h1 {
+    font-size: 3rem;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .attraction-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .home-hero {
+    text-align: center;
+  }
+}

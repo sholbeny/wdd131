@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="City guide for Heidelberg, Köln, Dortmund, Mainz, Würzburg, and Mannheim.">
+  <meta name="author" content="Samantha Holbeny">
+  <title>Germany Travel Guide | City Guide</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/cities.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a class="logo" href="index.html">Germany Travel Guide</a>
+      <button id="menu" aria-label="Open navigation menu"></button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="cities.html">City Guide</a>
+        <a href="planner.html">Travel Planner</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>City Guide</h1>
+      <p>Explore important attractions, admission costs, historic dates, and nearby landmarks.</p>
+    </section>
+
+    <section class="filter-section">
+      <h2>Filter by City</h2>
+      <label for="cityFilter">Choose a city:</label>
+      <select id="cityFilter">
+        <option value="all">All Cities</option>
+        <option value="Heidelberg">Heidelberg</option>
+        <option value="Köln">Köln</option>
+        <option value="Dortmund">Dortmund</option>
+        <option value="Mainz">Mainz</option>
+        <option value="Würzburg">Würzburg</option>
+        <option value="Mannheim">Mannheim</option>
+      </select>
+    </section>
+
+    <section id="cityCards" class="city-list"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Samantha Holbeny</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

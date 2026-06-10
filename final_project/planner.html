@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Germany travel planner for saving favorite cities and travel preferences.">
+  <meta name="author" content="Samantha Holbeny">
+  <title>Germany Travel Guide | Travel Planner</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/planner.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a class="logo" href="index.html">Germany Travel Guide</a>
+      <button id="menu" aria-label="Open navigation menu"></button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="cities.html">City Guide</a>
+        <a href="planner.html">Travel Planner</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Travel Planner</h1>
+      <p>Save your favorite cities and travel interests for a future Germany trip.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Create Your Travel Plan</h2>
+
+      <form id="travelForm">
+        <label for="travelerName">Your Name</label>
+        <input type="text" id="travelerName" name="travelerName" required>
+
+        <label for="favoriteCity">Favorite City</label>
+        <select id="favoriteCity" name="favoriteCity" required>
+          <option value="">Choose a city</option>
+          <option value="Heidelberg">Heidelberg</option>
+          <option value="Köln">Köln</option>
+          <option value="Dortmund">Dortmund</option>
+          <option value="Mainz">Mainz</option>
+          <option value="Würzburg">Würzburg</option>
+          <option value="Mannheim">Mannheim</option>
+        </select>
+
+        <fieldset>
+          <legend>What interests you most?</legend>
+
+          <label><input type="checkbox" name="interest" value="Castles"> Castles</label>
+          <label><input type="checkbox" name="interest" value="Cathedrals"> Cathedrals</label>
+          <label><input type="checkbox" name="interest" value="Old Towns"> Old Towns</label>
+          <label><input type="checkbox" name="interest" value="Museums"> Museums</label>
+          <label><input type="checkbox" name="interest" value="Parks"> Parks</label>
+        </fieldset>
+
+        <label for="tripLength">Trip Length</label>
+        <select id="tripLength" name="tripLength" required>
+          <option value="">Choose trip length</option>
+          <option value="1-2 days">1-2 days</option>
+          <option value="3-5 days">3-5 days</option>
+          <option value="1 week or more">1 week or more</option>
+        </select>
+
+        <button class="button" type="submit">Save My Plan</button>
+      </form>
+    </section>
+
+    <section class="saved-section">
+      <h2>Saved Travel Plan</h2>
+      <div id="savedPlan">
+        <p>No travel plan has been saved yet.</p>
+      </div>
+      <button id="clearPlan" class="button secondary-button" type="button">Clear Saved Plan</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Samantha Holbeny</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
